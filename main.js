@@ -35,8 +35,7 @@ class TaskItem extends DataModel {
         this.id = idField
         this.name = nameField
     }
-    
-    toString(){
+    toString() {
         return " - " + this.fieldList[1].value;
     }
 }
@@ -53,7 +52,7 @@ class TaskList extends DataModel {
     add(item) {
         this.list.push(item);
     }
-    toString(){
+    toString() {
         return this.fieldList[1].value;
     }
 }
@@ -77,7 +76,6 @@ class View {
 }
 
 class TaskListComponent extends Component {
-
     render() {
         return this.data + ":\n" + this.data.list.map(task => task).join("\n")
     }
