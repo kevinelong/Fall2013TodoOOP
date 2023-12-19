@@ -7,8 +7,10 @@ import {TaskListComponent} from './modules/app/view/tasklistcomponent.js'
 
 //MODELS
 const list = new TaskList("My List");
+// list.read()
 list.add(new TaskItem("Read the documentation"));
 list.add(new TaskItem("Sketch out a plan"));
+// list.update()
 
 //VIEWS
 const view = new View([

@@ -1,4 +1,4 @@
-import { DataModel } from '../../mvc/model/datamodel.js'
+import { DataModel, LocalDataModel } from '../../mvc/model/datamodel.js'
 import { FieldItem } from '../../mvc/model/fielditem.js'
 
 class TaskList extends DataModel {
