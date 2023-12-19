@@ -19,3 +19,6 @@ const view = new View([
 
 //RENDERING
 console.log(view.render())
+//HTML ALSO?
+document.body.innerHTML = view.html();
+

@@ -5,5 +5,9 @@ class TaskListComponent extends Component {
     render() {
         return this.data + ":\n" + this.data.fieldList.map(task => task).join("\n")
     }
+    html() {
+        return `<h1 class="taskList">${this.data}:</h1>`
+            + this.data.list.map(task => `<div class="taskItem"> ${task}</div>`).join("")
+    }
 }
 export { TaskListComponent }

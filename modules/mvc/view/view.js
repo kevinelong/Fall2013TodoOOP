@@ -5,5 +5,8 @@ class View {
     render() {
         return this.componentList.map(c => c.render()).join("\n")
     }
+    html(){
+        return this.componentList.map(c => c.html()).join("\n")
+    }
 }
 export {View}

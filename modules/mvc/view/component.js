@@ -3,7 +3,10 @@ class Component {
         this.data = data
     }
     render() {
-        return data;
+        return this.data;
+    }
+    html(){
+        return this.data;
     }
 }
 export { Component }
